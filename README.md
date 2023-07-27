@@ -1,2 +1,2 @@
 # calculator
-Calculator just using CSS &amp; HTML
+Created a basic calculator using CSS and HTML no need of Javascript.
