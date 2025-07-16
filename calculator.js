@@ -1,0 +1,45 @@
+const content = document.getElementById("content");
+
+const calcHeader = document.createElement("h2");
+calcHeader.textContent = "Calculator";
+calcHeader.classList.add("calcHeader");
+content.appendChild(calcHeader);
+
+function addition(numberOne, numberTwo) {
+  return numberOne + numberTwo;
+}
+function subtraction(numberOne, numberTwo) {
+  return numberOne - numberTwo;
+}
+
+function multiplication(numberOne, numberTwo) {
+  return numberOne * numberTwo;
+}
+
+function division(numberOne, numberTwo) {
+  return numberOne / numberTwo;
+}
+function modulo(numberOne, numberTwo) {
+  return numberOne % numberTwo;
+}
+
+let numberOne = 0;
+let numberTwo = 0;
+let operator = "";
+let solution = 0;
+function operate(operator, numberOne, numberTwo) {
+  if (operator == "+") {
+    solution = addition(numberOne, numberTwo);
+  } else if (operator == "-") {
+    solution = subtraction(numberOne, numberTwo);
+  } else if (operator == "/") {
+    solution = division(numberOne, numberTwo);
+  } else if (operator == "*") {
+    solution = multiplication(numberOne, numberTwo);
+  } else if (operator == "%") {
+    solution = modulo(numberOne, numberTwo);
+  } else {
+    return false;
+  }
+  return solution;
+}
