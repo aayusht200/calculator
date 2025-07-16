@@ -1,10 +1,4 @@
 const content = document.getElementById("content");
-
-const calcHeader = document.createElement("h2");
-calcHeader.textContent = "Calculator";
-calcHeader.classList.add("calcHeader");
-content.appendChild(calcHeader);
-
 function addition(numberOne, numberTwo) {
   return numberOne + numberTwo;
 }
