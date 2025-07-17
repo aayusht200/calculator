@@ -17,8 +17,8 @@ function modulo(numberOne, numberTwo) {
   return numberOne % numberTwo;
 }
 
-let numberOne = 0;
-let numberTwo = 0;
+let numberOne = null;
+let numberTwo = null;
 let operator = "";
 let solution = 0;
 function operate(operator, numberOne, numberTwo) {
@@ -36,4 +36,24 @@ function operate(operator, numberOne, numberTwo) {
     return false;
   }
   return solution;
+}
+
+const number = document.getElementsByClassName("number");
+const display = document.getElementById("result");
+const operatorFunction = document.getElementsByClassName("function");
+const clearFunction = document.getElementsByClassName("clac");
+for (let i = 0; i < number.length; i++) {
+  number[i].addEventListener("click", function (e) {
+    display.value += this.textContent;
+  });
+}
+for (let i = 0; i < operatorFunction.length; i++) {
+  operatorFunction[i].addEventListener("click", function (e) {
+    if (numberOne == null) {
+      numberOne = Number(display.value);
+      operator = this.textContent;
+      display.value = "";
+    }
+    console.log(numberOne + " " + operator + " " + numberTwo);
+  });
 }
