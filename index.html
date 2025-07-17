@@ -14,11 +14,11 @@
         <div id="calcBody">
             <div id="display">
                 <h2 id="calcHeader" class="header">Calculator</h2>
-                <input type="text" id="result">
+                <input type="text" id="result" readonly>
             </div>
             <div id="rowOne">
-                <button id="clear" class="function">AC</button>
-                <button class="function">Blank</button>
+                <button id="clear" class="calc">AC</button>
+                <button id="negation" class="calc">~</button>
                 <button id="modulus" class="function">%</button>
                 <button id="division" class="function">/</button>
             </div>
@@ -41,9 +41,9 @@
                 <button id="addition" class="function">+</button>
             </div>
             <div id="rowFive">
-                <button id="delete" class="function">del</button>
+                <button id="delete" class="calc">del</button>
                 <button id="zero" class="number">0</button>
-                <button class="placeHolder">Blank</button>
+                <button id="decimal" class="number">.</button>
                 <button id="calc" class="function">=</button>
             </div>
         </div>
