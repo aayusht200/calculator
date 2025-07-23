@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#displayArea {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  min-width: 100vw;
+  min-height: 100vw;
+  background-color: lightblue;
+}
+#content {
+  justify-items: center;
+  align-content: center;
+}
+#calcBody {
+  background-color: lightcoral;
+  padding: 2rem;
+  border: 1px grey solid;
+}
+#display {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+}
+#result {
+  width: 100%;
+}
+button {
+  background-color: lightcyan;
+  width: 4rem;
+  height: 3rem;
+  border: 1px solid;
+  border-radius: 1rem;
+}
